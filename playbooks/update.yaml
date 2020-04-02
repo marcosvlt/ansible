@@ -1,0 +1,10 @@
+---
+- hosts: demo_hosts
+  tasks:
+          - name: Update servers
+            apt:
+                    update_cache: yes
+                    upgrade: dist
+
+            become: true
+
